@@ -24,6 +24,12 @@ const App = () => {
     // console.log(data.Search);
   };
 
+  const handleSearchKeyPress = (e) => {
+    if (e.key === "Enter") {
+      searchTitle(searchTerm);
+    }
+  };
+
   useEffect(() => {
     searchTitle("");
   }, []);
@@ -44,6 +50,7 @@ const App = () => {
                 className="bg-transparent outline-none"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
+                onKeyUp={handleSearchKeyPress}
               />
 
               <LuSearch
