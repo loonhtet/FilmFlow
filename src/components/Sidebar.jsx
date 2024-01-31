@@ -13,7 +13,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`w-1/6 dark:bg-zinc-900 border-r border-zinc-800 duration-300 ease-in-out ${isSidebarOpen ? "w-10" : "w-1/6"}`}
+      className={`w-1/6 h-full sm:h-auto absolute sm:static dark:bg-zinc-900 border-r border-zinc-800 duration-300 ease-in-out ${isSidebarOpen ? "w-4 sm:w-10" : "w-3/5 sm:w-1/6"}`}
     >
       <div className="p-4">
         <div className="relative">
@@ -23,7 +23,7 @@ const Sidebar = () => {
             FilmFlow
           </h1>
           <LuAlignJustify
-            className="absolute w-[40px] h-[40px] p-[8px] text-xl cursor-pointer -right-9 top-0 bg-zinc-800 rounded-full"
+            className="absolute w-[40px] h-[40px] p-[8px] text-xl cursor-pointer -right-9 sm:-right-9 top-14 sm:top-0 bg-zinc-800 rounded-full"
             onClick={() => {
               setIsSetbarOpen(!isSidebarOpen);
             }}

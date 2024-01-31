@@ -38,16 +38,16 @@ const App = () => {
     <div className="dark">
       <div className="h-full min-h-[100vh] dark:bg-zinc-950 dark:text-zinc-200 flex">
         <Sidebar />
-        <div className="container mx-auto w-2/3">
+        <div className="container mx-auto w-5/6 sm:w-2/3">
           {/* Start Navbar */}
           <nav className="flex justify-between items-center py-4 border-b border-zinc-800">
             <h1 className="text-3xl text-zinc-200 font-bold">FilmFlow</h1>
 
-            <div className="flex justify-between items-center border border-zinc-700 py-2 px-4 rounded-sm">
+            <div className="w-1/2 sm:w-max flex justify-between items-center border border-zinc-700 py-2 px-4 rounded-sm">
               <input
                 type="text"
                 placeholder="Search"
-                className="bg-transparent outline-none"
+                className="w-full bg-transparent outline-none"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyUp={handleSearchKeyPress}
