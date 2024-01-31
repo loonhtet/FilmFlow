@@ -2,7 +2,7 @@ import React from "react";
 
 const Cardbox = ({ movieprops }) => {
   return (
-    <div className="border border-zinc-700 p-2 rounded-sm">
+    <div className="border border-zinc-400 dark:border-zinc-700 p-2 rounded-sm duration-200 ease-in hover:scale-95">
       <img
         src={
           movieprops.Poster !== "N/A"
