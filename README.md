@@ -2,7 +2,7 @@
 
 I'm writing a web app that provides users with a fantastic search feature for searching movies. The app is built with React, Tailwind CSS, and integrates with the OMDB API for movie data.
 
-![Alt Text](src/assets/mobile-mockup1.png)
+![Alt Text](src/assets/mockup-mobile.png)
 
 ## Features
 
