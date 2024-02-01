@@ -59,7 +59,7 @@ const App = () => {
     <div className={`${isdark ? "dark" : ""}`}>
       <div className="duration-300 h-full min-h-[100vh] dark:bg-zinc-950 dark:text-zinc-200 flex">
         <button
-          className="fixed right-2 bottom-6 sm:right-10 sm:top-4 text-2xl p-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"
+          className="fixed right-2 bottom-6 sm:right-10 sm:bottom-4 text-2xl p-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"
           onClick={() => setIsdark(!isdark)}
         >
           {isdark ? <MdSunny /> : <MdDarkMode />}
