@@ -59,7 +59,7 @@ const App = () => {
     <div className={`${isdark ? "dark" : ""}`}>
       <div className="duration-300 h-full min-h-[100vh] dark:bg-zinc-950 dark:text-zinc-200 flex">
         <button
-          className="fixed right-10 top-4 text-2xl p-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"
+          className="fixed right-2 bottom-6 sm:right-10 sm:top-4 text-2xl p-2 bg-zinc-100 dark:bg-zinc-800 rounded-full"
           onClick={() => setIsdark(!isdark)}
         >
           {isdark ? <MdSunny /> : <MdDarkMode />}
@@ -121,7 +121,7 @@ const App = () => {
         </div>
       </div>
       <footer className="flex justify-center items-center bg-zinc-100 border-zinc-200 dark:bg-zinc-900 dark:text-zinc-200 py-6 font-semibold border-t dark:border-zinc-800">
-        <div className="w-1/2 mx-auto flex justify-between">
+        <div className="w-5/6 sm:w-1/2 mx-auto flex justify-between">
           <p>© 2024 Loon Htet</p>
           <div className="flex items-center gap-2 ">
             <a href="#">
